@@ -41,7 +41,7 @@ In this section I will list data analytics projects briefly describing the techn
 Review of the movies with highest revenue and their genre, people interests...
 
 ### Link to Project:
-https://github.com/HadiRaza68/Data-Analyst-Portfolio-Projects-/blob/main/Portfolio%20Projects/Analysis%20on%20imdb%20data.ipynb
+https://github.com/HadiRaza68/Data-Analyst-Portfolio-Projects-/blob/main/Analysis%20on%20imdb%20data.ipynb
 
 
 ### 2 - Data exploration with PostgreSql
@@ -61,8 +61,7 @@ This project contains same IMDB movies dataset with 1000 records.
 Review of the movies with highest revenue and their genre, people interests...
 ### Link to Project:
 
-https://github.com/HadiRaza68/Data-Analyst-Portfolio-Projects-/blob/main/Portfolio%20Projects/PSQl%20project%20on%20imdb%20data
-
+https://github.com/HadiRaza68/Data-Analyst-Portfolio-Projects-/blob/main/PSQl%20project%20on%20imdb%20data
 ### 3 -  Data Analysis Titanic dataset
 
 #### Description:
@@ -83,8 +82,7 @@ Parent child, Ticket, Fare, Cabin, Embarked
 Review of the movies with highest revenue and their genre, people interests...
 ### Link to Project:
 
-https://github.com/HadiRaza68/Data-Analyst-Portfolio-Projects-/blob/main/Portfolio%20Projects/_Analysis%20on%20Titanic%20Dataset.ipynb
-
+https://github.com/HadiRaza68/Data-Analyst-Portfolio-Projects-/blob/main/_Analysis%20on%20Titanic%20Dataset.ipynb
 
 ## 🛠 Skills
 1 - Exploratory data analysis with Python, Pandas.
