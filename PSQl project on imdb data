@@ -1,0 +1,180 @@
+--Lets do an EXPLORATORY DATA ANALYSIS ON IMDB DATA IN POSTGRESQL.
+--Seeing top 10 rows of our data
+
+SELECT *
+FROM imdb
+LIMIT 10;
+
+--WILL do the same
+
+SELECT *
+FROM imdb FETCH FIRST 10 ROWS ONLY;
+
+--Display title of the movie with greatest Runtime
+
+SELECT title,
+	runtime_min
+FROM imdb
+ORDER BY runtime_min DESC
+LIMIT 1;
+
+--In which year there was highest average voting
+
+SELECT YEAR,
+	AVG(votes) AS "highest average voting"
+FROM imdb
+GROUP BY YEAR
+ORDER BY AVG(votes) DESC
+LIMIT 1;
+
+--Find average rating for each director
+
+SELECT director,
+	AVG(rating) AS "average rating"
+FROM imdb
+GROUP BY director
+ORDER BY AVG(rating) DESC;
+
+--Movie with highest revenue ,its title,release year
+
+SELECT YEAR,
+	revenue_mm
+FROM imdb
+ORDER BY revenue_mm DESC
+LIMIT 1;
+
+--display movie with highest earnings, its title and revenue
+
+SELECT title,
+	revenue_mm,
+	year
+FROM imdb
+GROUP BY title,
+	year,
+	revenue_mm
+HAVING revenue_mm = MAX(revenue_mm)
+ORDER BY MAX(revenue_mm) DESC
+LIMIT 1;
+
+--will do the same
+
+SELECT MAX(revenue_mm),
+	revenue_mm
+FROM imdb
+WHERE revenue_mm NOTNULL
+GROUP BY title
+ORDER BY MAX(revenue_mm) DESC
+LIMIT 1;
+
+--Average rating for each director
+
+SELECT director,
+	rating
+FROM imdb
+GROUP BY director,
+	rating
+HAVING rating = AVG(rating)
+ORDER BY AVG(rating) DESC;
+
+--Top 10 lengthy movies
+
+SELECT title,
+	runtime_min
+FROM imdb
+GROUP BY title,
+	runtime_min
+HAVING runtime_min = MAX(runtime_min)
+ORDER BY MAX(runtime_min) DESC
+LIMIT 10;
+
+--Number of movies per year
+
+SELECT YEAR,
+	COUNT(title) AS "movies per year"
+FROM imdb
+GROUP BY year
+ORDER BY "movies per year" DESC;
+
+--Top 10 highest rated movies
+
+SELECT rating,
+	title
+FROM imdb
+GROUP BY title,
+	title
+ORDER BY rating DESC
+LIMIT 10;
+
+--Does rating affect the revenue
+
+SELECT rating,
+	revenue_mm
+FROM imdb
+GROUP BY rating,
+	revenue_mm
+ORDER BY rating DESC
+LIMIT 10;
+
+--No, rating is not affecting the revenue.
+ --Count Movies with specific genre
+
+SELECT COUNT(genre)
+FROM imdb
+WHERE genre = 'Action,Adventure,Fantasy';
+
+--Check movies with unique genre
+
+SELECT COUNT(DISTINCT(genre))
+FROM imdb;
+
+--Highest rated movies cast and title
+
+SELECT actors,
+	title,
+	rating
+FROM imdb
+ORDER BY rating DESC
+LIMIT 10;
+
+--Directors with highest revenue collection
+
+SELECT director,
+	revenue_mm
+FROM imdb
+GROUP BY revenue_mm,
+	revenue_mm
+HAVING revenue_mm = MAX(revenue_mm)
+ORDER BY MAX(revenue_mm) DESC
+LIMIT 10;
+
+--Top 10 movies with highest metascore
+
+SELECT title,
+	metascore
+FROM imdb
+GROUP BY title,
+	METASCORE
+HAVING metascore = MAX(metascore)
+ORDER BY MAX(metascore) DESC
+LIMIT 10;
+
+--Top 10 movies with least revenue
+
+SELECT TITLE,
+	revenue_mm,
+	year
+FROM imdb
+GROUP BY title,
+	year,
+	revenue_mm
+HAVING revenue_mm = MIN(revenue_mm)
+ORDER BY MIN(revenue_mm) ASC
+LIMIT 10;
+
+
+SELECT MAX(revenue_mm),
+	title
+FROM imdb
+WHERE revenue_mm NOTNULL
+GROUP BY title
+ORDER BY MAX(revenue_mm) DESC;
