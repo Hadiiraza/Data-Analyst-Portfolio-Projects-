@@ -99,14 +99,7 @@ https://github.com/HadiRaza68/Data-Analyst-Portfolio-Projects-/blob/main/_Analys
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/_growtogether_?t=aE1o4pPZSrURyY8GN1KxVA&s=09)
 
 
-## End note
-👩‍💻 I'm currently working on becoming Data Analyst. 
 
-🧠 These days I'm learning data visualization tool Tableau.
-
-👯‍♀️ Looking to collaborate on Projects for learning purposes.
-
-📫 Find me on LinkedIn and Twitter. Links are given in contact section.
 
 
 
