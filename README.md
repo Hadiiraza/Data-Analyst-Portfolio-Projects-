@@ -1,7 +1,7 @@
 # Hadi's Data Analytics Portfolio
 
 ## 🚀 About Me
-Hadi, a motivated Data Analyst by the belief that data can be used to make better decisions. I wants to be able to make it easier for people to understand code and use data efficiently. I believe in the power of data and impact it can create on human lives. I primarily use Python, but also has experience with PostgreSql and Excel. I have a Sciences background and hold a Bachlors of Science (B.S.) degree in Physics.
+Hadi, a motivated Data Analyst by the belief that data can be used to make better decisions. I want to be able to make it easier for people to understand data and use it efficiently. I believe in the power of data and impact it can create on human lives. I primarily use Python, but also has experience with PostgreSql and Excel. I have a Sciences background and hold a Bachlors of Science (B.S.) degree in Physics.
 
 This is a repository that I have created to showcase skills, share projects and track my progress in Data Analytics related topics.
 
