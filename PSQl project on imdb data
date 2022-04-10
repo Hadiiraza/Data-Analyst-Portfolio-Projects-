@@ -10,7 +10,7 @@ LIMIT 10;
 SELECT *
 FROM imdb FETCH FIRST 10 ROWS ONLY;
 
---Display title of the movie with greatest Runtime
+--Display title of the movie with highest Runtime
 
 SELECT title,
 	runtime_min
