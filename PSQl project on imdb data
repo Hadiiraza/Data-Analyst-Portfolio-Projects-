@@ -1,4 +1,4 @@
---Lets do an EXPLORATORY DATA ANALYSIS ON IMDB DATA IN POSTGRESQL.
+--Lets do an EXPLORATORY DATA ANALYSIS ON IMDB DATA IN SQL.
 --Seeing top 10 rows of our data
 
 SELECT *
@@ -178,3 +178,5 @@ FROM imdb
 WHERE revenue_mm NOTNULL
 GROUP BY title
 ORDER BY MAX(revenue_mm) DESC;
+
+Take Care:)
