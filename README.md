@@ -13,7 +13,7 @@ Data Cleaning
 
 Exploratory Data Analysis
 
-PostreSql for Analysis
+PostgreSql for Analysis
 
 Data Visualization to draw conclusions.
 
